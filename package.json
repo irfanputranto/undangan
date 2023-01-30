@@ -1,0 +1,23 @@
+{
+  "name": "undangan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./assets/css/customOutput.css --watch",
+    "production": "npx tailwindcss -o build.css --minify"
+  },
+  "keywords": [],
+  "author": "irfanp",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-responsive-embed": "^1.0.0"
+  },
+  "dependencies": {
+    "tailwindcss-aspect-ratio": "^3.0.0"
+  }
+}

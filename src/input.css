@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .grid-card {
+        @apply w-36 h-36 bg-blue-500 aspect-[4/3] rounded-full md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-95 transition-all duration-500 mx-auto;
+    }
+
+    .grid-card-img {
+        @apply w-36 h-36 bg-cover rounded-full absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-500;
+    }
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
